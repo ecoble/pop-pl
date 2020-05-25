@@ -22,6 +22,9 @@ infusion:
                        | after 1 hour
                        |     restart HEParin
                        |     decrease HEParin by: 3 units/kg/hour
+    aPTT > 260         | hold HEParin
+                         every 15 minutes checkaPTT
+
 
 aPTTChecking:
   every 6 hours checkaPTT whenever aPTTResult outside of 59 to 101, x2
